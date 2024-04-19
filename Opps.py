@@ -1,5 +1,9 @@
 class Country():
-    def __init__(self,Name):
+    Continent='Asia'
+    def __init__(self,Name,Capital):
         self.Name=Name
-My_country=Country("India")
-print(f' I Am from {My_country.Name}')
+        self.Capital=Capital
+    def Greet(self,Message):
+        print(f'{Message} {self.Name}')
+My_country=Country("India",'Delhi')
+print(My_country.Greet('Namestay'))
